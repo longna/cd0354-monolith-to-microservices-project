@@ -3,22 +3,22 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: frontend
-  name: frontend
+    app: udagram-frontend
+  name: udagram-frontend
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: frontend
+      app: udagram-frontend
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: frontend
+        app: udagram-frontend
     spec:
       containers:
-      - image: longna4/udagram-frontend:v4
+      - image: trandai26/udagram-frontend:v1
         name: udagram-frontend
         resources:
           requests:
@@ -27,4 +27,3 @@ spec:
           limits:
             memory: "2042Mi"
             cpu: "500m"
-status: {}

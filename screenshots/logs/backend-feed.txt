@@ -9,10 +9,5 @@ server running http://localhost:8100
 press CTRL+C to stop server
 Executing (default): SELECT count(*) AS "count" FROM "FeedItem" AS "FeedItem";
 Executing (default): SELECT "id", "caption", "url", "createdAt", "updatedAt" FROM "FeedItem" AS "FeedItem" ORDER BY "FeedItem"."id" DESC;
-Executing (default): SELECT count(*) AS "count" FROM "FeedItem" AS "FeedItem";
-Executing (default): SELECT "id", "caption", "url", "createdAt", "updatedAt" FROM "FeedItem" AS "FeedItem" ORDER BY "FeedItem"."id" DESC;
 Executing (default): INSERT INTO "FeedItem" ("id","caption","url","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING *;
-Executing (default): SELECT count(*) AS "count" FROM "FeedItem" AS "FeedItem";
-Executing (default): SELECT "id", "caption", "url", "createdAt", "updatedAt" FROM "FeedItem" AS "FeedItem" ORDER BY "FeedItem"."id" DESC;
-Executing (default): SELECT count(*) AS "count" FROM "FeedItem" AS "FeedItem";
-Executing (default): SELECT "id", "caption", "url", "createdAt", "updatedAt" FROM "FeedItem" AS "FeedItem" ORDER BY "FeedItem"."id" DESC;
+Executing (default): INSERT INTO "FeedItem" ("id","caption","url","createdAt","updatedAt") VALUES (DEFAULT,$1,$2,$3,$4) RETURNING *;

@@ -20,7 +20,7 @@ spec:
           secret:
             secretName: aws-secret
       containers:
-      - image: longna4/udagram-api-feed:v2
+      - image: trandai26/udagram-api-feed:v1
         name: udagram-api-feed
         resources:
           requests:
@@ -78,4 +78,6 @@ spec:
         volumeMounts:
           - name: aws-secret
             mountPath: "/root/.aws/"
-            readOnly: true   
+            readOnly: true
+        
+

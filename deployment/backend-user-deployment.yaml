@@ -1,7 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  creationTimestamp: null
   labels:
     app: backend-user
   name: backend-user
@@ -13,7 +12,6 @@ spec:
   strategy: {}
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: backend-user
     spec:
@@ -22,7 +20,7 @@ spec:
           secret:
             secretName: aws-secret
       containers:
-      - image: longna4/udagram-api-user:v2
+      - image: trandai26/udagram-api-user:v1
         name: udagram-api-user
         resources:
           requests:

@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 data:
-  POSTGRES_HOST: database-1.cpmjpiwanwfl.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: database-2.cvwm5wb60kou.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: longna4-project3
+  AWS_BUCKET: daitran-project3
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing

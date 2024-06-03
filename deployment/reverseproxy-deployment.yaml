@@ -15,8 +15,8 @@ spec:
         app: reverseproxy
     spec:
       containers:
-        - image: longna4/reverseproxy:v2
-          name: reverseproxy
+        - image: trandai26/reverseproxy:v1
+          name: udagram-reverseproxy
           imagePullPolicy: Always
           ports:
           - containerPort: 8080      
